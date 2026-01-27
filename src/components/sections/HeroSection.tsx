@@ -1,29 +1,46 @@
 
 function HeroSection() {
     return (
-        <section id="home" className="pt-20 bg-linear-to-br from-green-50 to-green-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div className="relative isolate px-6 pt-14 lg:px-8">
+            <div
+                aria-hidden="true"
+                className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            >
+                <div
+                    style={{
+                        clipPath:
+                            'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                    }}
+                    className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#186331] to-[#32cfcf] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
+                />
+            </div>
+            <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                    <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                        General Printing & Delivery | Furniture | Import & Export.{' '}
+                    </div>
+                </div>
                 <div className="text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                        INK MIND-AUTOS
+                    <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+                        General Printing &  Delivery  <span className="font-light text-green-600">Services </span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-green-700 font-semibold mb-4">
-                        General Printing & Delivery | Furniture | Import & Export
-                    </p>
-                    <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
+                    <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
                         We're always available. Your wish is our command. At INK MIND-AUTOS, we deliver the best services.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#services" className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                    <div className="mt-10 flex items-center justify-center gap-x-6">
+                        <a
+                            href="#"
+                            className="rounded-md bg-neutral-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs"
+                        >
                             Our Services
                         </a>
-                        <a href="#contact" className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold border-2 border-green-600 hover:bg-green-50 transition">
-                            Get In Touch
+                        <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                            Get In Touch <span aria-hidden="true"> →</span>
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

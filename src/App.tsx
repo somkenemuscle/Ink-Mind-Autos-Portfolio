@@ -13,8 +13,8 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-      <About />
       <Services />
+      <About />
       <Contact />
       <Footer />
     </div>
