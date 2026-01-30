@@ -6,7 +6,10 @@ const contactInfo = [
         icon: Phone,
         title: "Call Us",
         description: "Mon-Fri from 8am to 6pm",
-        details: ["+234 903 076 1768", "+234 902 269 7710"],
+        details: [
+            { text: "+234 903 076 1768", href: "tel:+2349030761768" },
+            { text: "+234 902 269 7710", href: "tel:+2349022697710" },
+        ],
         color: "from-emerald-500 to-teal-500",
         bgColor: "bg-emerald-50",
         iconColor: "text-emerald-600",
@@ -16,7 +19,9 @@ const contactInfo = [
         icon: Mail,
         title: "Email Us",
         description: "We'll respond within 24 hours",
-        details: ["info@inkmindautos.com"],
+        details: [
+            { text: "info@inkmindautos.com", href: "mailto:info@inkmindautos.com" },
+        ],
         color: "from-blue-500 to-indigo-500",
         bgColor: "bg-blue-50",
         iconColor: "text-blue-600",
@@ -26,7 +31,10 @@ const contactInfo = [
         icon: MapPin,
         title: "Visit Us",
         description: "Come say hello at our office",
-        details: ["Oziegbe Street", "Ilupeju, Lagos State"],
+        details: [
+            { text: "Oziegbe Street", href: null },
+            { text: "Ilupeju, Lagos State", href: null },
+        ],
         color: "from-purple-500 to-pink-500",
         bgColor: "bg-purple-50",
         iconColor: "text-purple-600",
@@ -90,7 +98,7 @@ function Contact() {
                             >
                                 {/* Gradient overlay on hover */}
                                 <div className={`absolute inset-0 bg-linear-to-br ${info.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-                                
+
                                 <div className="relative flex items-start gap-4">
                                     {/* Icon */}
                                     <div className={`
@@ -106,7 +114,13 @@ function Contact() {
                                         <p className="text-sm text-gray-500 mb-2">{info.description}</p>
                                         <div className="space-y-1">
                                             {info.details.map((detail, idx) => (
-                                                <p key={idx} className="text-gray-700 font-medium">{detail}</p>
+                                                detail.href ? (
+                                                    <a key={idx} href={detail.href} className="block text-gray-700 font-medium hover:text-green-600 transition-colors">
+                                                        {detail.text}
+                                                    </a>
+                                                ) : (
+                                                    <p key={idx} className="text-gray-700 font-medium">{detail.text}</p>
+                                                )
                                             ))}
                                         </div>
                                     </div>
@@ -254,7 +268,7 @@ function Contact() {
                             <h4 className="text-lg font-bold text-gray-900">Prefer to talk?</h4>
                             <p className="text-gray-600">Schedule a call with our team</p>
                         </div>
-                        <a 
+                        <a
                             href="tel:+2349030761768"
                             className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full font-medium hover:bg-green-700 transition-colors group"
                         >
