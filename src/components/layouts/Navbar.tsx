@@ -45,7 +45,7 @@ function Navbar() {
                                     ${scrolled ? 'w-10 h-10' : 'w-12 h-12'}
                                 `}>
                                     <img 
-                                        src="/logos.png" 
+                                        src="https://t4bg270yk4.ufs.sh/f/yvg0jlQbOFCvOCkEAjG9rYELlynDocWsC4ZqUapIJmjK6hSM" 
                                         alt="INK MIND-AUTOS" 
                                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                                     />

@@ -161,10 +161,10 @@ function Services() {
                 <div className="mt-16 text-center">
                     <div className="inline-flex items-center gap-4 p-2 bg-gray-100 rounded-full">
                         <span className="pl-4 text-gray-600">Need a custom solution?</span>
-                        <button className="px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2 group">
+                        <a href="#contact" className="px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2 group">
                             Contact Us
                             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

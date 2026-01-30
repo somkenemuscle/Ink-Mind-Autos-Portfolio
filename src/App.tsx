@@ -5,6 +5,7 @@ import About from './components/sections/About';
 import Services from './components/sections/Services';
 import Contact from './components/sections/Contact';
 import Footer from './components/layouts/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 
 
@@ -17,6 +18,7 @@ export default function App() {
       <About />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
