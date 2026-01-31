@@ -8,7 +8,6 @@ const contactInfo = [
         description: "Mon-Fri from 8am to 6pm",
         details: [
             { text: "+234 903 076 1768", href: "tel:+2349030761768" },
-            { text: "+234 902 269 7710", href: "tel:+2349022697710" },
         ],
         color: "from-emerald-500 to-teal-500",
         bgColor: "bg-emerald-50",
