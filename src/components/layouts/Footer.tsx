@@ -57,7 +57,7 @@ function Footer() {
                                 <div className="flex items-center gap-3">
                                     <div className="w-12 h-12 rounded-xl overflow-hidden">
                                         <img 
-                                            src="/Logos2.png" 
+                                            src="/inkmindLogo.png" 
                                             alt="INK MIND-AUTOS" 
                                             className="w-full h-full object-contain"
                                         />

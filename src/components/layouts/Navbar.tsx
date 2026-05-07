@@ -45,7 +45,7 @@ function Navbar() {
                                     ${scrolled ? 'w-14 h-14' : 'w-16 h-16'}
                                 `}>
                                     <img
-                                        src="/Logos2.png"
+                                        src="/inkmindLogo.png"
                                         alt="INK MIND-AUTOS"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                     />
