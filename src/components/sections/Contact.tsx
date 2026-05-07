@@ -19,7 +19,7 @@ const contactInfo = [
         title: "Email Us",
         description: "We'll respond within 24 hours",
         details: [
-            { text: "info@inkmindautos.com", href: "mailto:info@inkmindautos.com" },
+            { text: "inkmindautos@gmail.com", href: "mailto:inkmindautos@gmail.com" },
         ],
         color: "from-blue-500 to-indigo-500",
         bgColor: "bg-blue-50",
