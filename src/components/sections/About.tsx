@@ -72,7 +72,7 @@ function About() {
                                     {/* Logo placeholder */}
                                     <div className="w-20 h-20 mx-auto">
                                         <img 
-                                            src="/logos.png" 
+                                            src="/Logos2.png" 
                                             alt="INK MIND-AUTOS" 
                                             className="w-full h-full object-contain"
                                         />
